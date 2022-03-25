@@ -16,7 +16,12 @@ public class TestComposition {
     }
 }
 
-class A{
+interface Ia{
+    void inc();
+    int getValue();
+}
+
+class A implements Ia{
 
     private int cpt = 0;
 
@@ -29,7 +34,7 @@ class A{
     }
 }
 
-class B {
+class B implements Ia{
 
     private A mySuper = new A();
 
@@ -44,5 +49,5 @@ class B {
     public void inc() {
         mySuper.inc();
     }
-    
+
 }
