@@ -1,6 +1,7 @@
 import java.util.AbstractList;
+import java.util.List;
 
-public class EvenList extends AbstractList<Integer> {
+public class EvenList extends AbstractList<Integer> implements List<Integer> {
 
     @Override
     public Integer get(int index) {
